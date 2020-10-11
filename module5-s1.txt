@@ -1,0 +1,149 @@
+[dvillarmero@localhost ~]$ vi
+[dvillarmero@localhost ~]$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[dvillarmero@localhost ~]$ wget https://github.com/BoiseState/CS-HU153-resources/raw/master/activities/vimsetup.tar
+--2020-02-20 21:07:02--  https://github.com/BoiseState/CS-HU153-resources/raw/master/activities/vimsetup.tar
+Resolving github.com (github.com)... 192.30.255.112
+Connecting to github.com (github.com)|192.30.255.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/BoiseState/CS-HU153-resources/master/activities/vimsetup.tar [following]
+--2020-02-20 21:07:02--  https://raw.githubusercontent.com/BoiseState/CS-HU153-resources/master/activities/vimsetup.tar
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.192.133, 151.101.0.133, 151.101.64.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.192.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 225280 (220K) [application/octet-stream]
+Saving to: ‘vimsetup.tar’
+
+100%[======================================>] 225,280     --.-K/s   in 0.09s   
+
+2020-02-20 21:07:02 (2.30 MB/s) - ‘vimsetup.tar’ saved [225280/225280]
+
+[dvillarmero@localhost ~]$ tar xvf vimsetup.tar
+vimsetup/
+vimsetup/README.md
+vimsetup/.vim/
+vimsetup/.vim/colors/
+vimsetup/.vim/colors/solarized.vim
+vimsetup/.vim/colors/pyte.vim
+vimsetup/.vim/colors/summerfruit256.vim
+vimsetup/.vim/autoload/
+vimsetup/.vim/autoload/tcomment.vim
+vimsetup/.vim/plugin/
+vimsetup/.vim/plugin/tcomment.vim
+vimsetup/.vim/plugin/DoxygenToolkit.vim
+vimsetup/.gvimrc
+vimsetup/.vimrc
+vimsetup/vimsetup-install.sh
+[dvillarmero@localhost ~]$ cd vimsetup/
+[dvillarmero@localhost vimsetup]$ ./vimsetup-install.sh 
+
+Vim installation completed!
+
+[dvillarmero@localhost vimsetup]$ cd ~
+[dvillarmero@localhost ~]$ ssh danielvillarmero@onyx.boisestate.edu
+danielvillarmero@onyx.boisestate.edu's password: 
+Last login: Sun Feb 16 21:17:34 2020 from 10.101.143.155
+/usr/bin/id: cannot find name for group ID 464539
+[danielvillarmero@onyx ~]$ wget https://github.com/BoiseState/CS-HU153-resources/raw/master/activities/vimsetup.tar
+--2020-02-20 21:07:56--  https://github.com/BoiseState/CS-HU153-resources/raw/master/activities/vimsetup.tar
+Resolving github.com (github.com)... 192.30.255.113
+Connecting to github.com (github.com)|192.30.255.113|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/BoiseState/CS-HU153-resources/master/activities/vimsetup.tar [following]
+--2020-02-20 21:07:56--  https://raw.githubusercontent.com/BoiseState/CS-HU153-resources/master/activities/vimsetup.tar
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.64.133, 151.101.128.133, 151.101.192.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.64.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 225280 (220K) [application/octet-stream]
+Saving to: ‘vimsetup.tar’
+
+100%[======================================>] 225,280     --.-K/s   in 0.06s   
+
+2020-02-20 21:07:56 (3.62 MB/s) - ‘vimsetup.tar’ saved [225280/225280]
+
+[danielvillarmero@onyx ~]$ tar xvf vimsetup.tar 
+vimsetup/
+vimsetup/README.md
+vimsetup/.vim/
+vimsetup/.vim/colors/
+vimsetup/.vim/colors/solarized.vim
+vimsetup/.vim/colors/pyte.vim
+vimsetup/.vim/colors/summerfruit256.vim
+vimsetup/.vim/autoload/
+vimsetup/.vim/autoload/tcomment.vim
+vimsetup/.vim/plugin/
+vimsetup/.vim/plugin/tcomment.vim
+vimsetup/.vim/plugin/DoxygenToolkit.vim
+vimsetup/.gvimrc
+vimsetup/.vimrc
+vimsetup/vimsetup-install.sh
+[danielvillarmero@onyx ~]$ ./vimsetup/
+-bash: ./vimsetup/: Is a directory
+[danielvillarmero@onyx ~]$ cd vimsetup/
+[danielvillarmero@onyx vimsetup]$ ./vimsetup-install.sh 
+
+Vim installation completed!
+
+[danielvillarmero@onyx vimsetup]$ cd ~
+[danielvillarmero@onyx ~]$ exit
+logout
+Connection to onyx.boisestate.edu closed.
+[dvillarmero@localhost ~]$ vimtutor
+[dvillarmero@localhost ~]$ vimtutor
+[dvillarmero@localhost ~]$ mkdir Activity5
+[dvillarmero@localhost ~]$ cd Activity5/
+[dvillarmero@localhost Activity5]$ vim hello.sh
+[dvillarmero@localhost Activity5]$ chmod +x hello.sh 
+[dvillarmero@localhost Activity5]$ ./hello.sh                                                                                                                                                                                                
+Hello world from localhost.localdomain!                                                                                                                                                                                                      
+[dvillarmero@localhost Activity5]$ vim hello.sh                                                                                                                                                                                        
+[dvillarmero@localhost Activity5]$ ./hello.sh                                                                                                                                                                                               
+Hello world from localhost.localdomain! Vendor ID: GenuineIntel                                                                                                                                                                              
+[dvillarmero@localhost Activity5]$                                                                                                                                                                                                           
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
